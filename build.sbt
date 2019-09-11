@@ -397,7 +397,7 @@ lazy val example = project
   .settings(doobieSettings ++ noPublishSettings)
   .settings(crossScalaAll)
   .settings(mimaSettings)
-  .dependsOn(core, postgres, specs2, scalatest, hikari, h2)
+  .dependsOn(core, postgres, quill, specs2, scalatest, hikari, h2)
   .settings(
     libraryDependencies ++= Seq(
       "co.fs2" %% "fs2-io"     % fs2Version
